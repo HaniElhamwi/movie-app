@@ -1,0 +1,41 @@
+/* .row-folder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  grid-template-rows: repeat(5, 100px);
+  gap: 20px;
+} */
+
+.image-holder {
+  transition: transform 0.2s;
+  position: relative;
+}
+.image-holder:hover {
+  transform: scale(1.1);
+}
+
+.image-holder img {
+  border: 1px white solid;
+}
+
+.image-holder:hover .overlay {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 3px;
+  background-color: rgba(3, 36, 36, 0.86);
+  width: 80%;
+  left: 1%;
+  bottom: 15px;
+  height: 60px;
+  /* opacity: 0; */
+  z-index: 100;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
